@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "0c7647c5-5fab-4557-ae22-59bea956eda1",
+		"name": "API LPBD 2023-2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10292792"
+	},
+	"item": [
+		{
+			"name": "get categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nome\" : \"Equipamento de rede\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codigo\" : 2,\n    \"nome\" : \"Bebidas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/categorias/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categorias",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get categoria por código",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/categorias/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"categorias",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\" : \"Mouse novo\",\n    \"descricao\" : \"Mouse sem fio\",\n    \"ativo\" : true, \n    \"quantidade_estoque\" : 60,\n    \"valor\" : 50.0,\n    \"data_cadastro\" : \"2023-10-28\",\n    \"categoria\" : 1 \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"codigo\": 12,\n        \"nome\": \"Mouse novo 12 alterado\",\n        \"descricao\": \"Mouse sem fio\",\n        \"quantidade_estoque\": 60,\n        \"ativo\": true,\n        \"valor\": \"50.00\",\n        \"data_cadastro\": \"2023-10-28\",\n        \"categoria\": 1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/produtos",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produtos/12",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get produto por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/produtos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"produtos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
