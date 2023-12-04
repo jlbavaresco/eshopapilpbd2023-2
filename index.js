@@ -264,5 +264,5 @@ app.route('/produtos/:codigo')
 
 
 app.listen(process.env.PORT || 3002, () => {
-    console.log('Servidor da API Rodando - eShop API');
+    console.log('Servidor da API Rodando - eShop');
 })
